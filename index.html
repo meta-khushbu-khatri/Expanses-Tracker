@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exp.css">
+</head>
+<body>
+    <h1 class="h" id="h">Expanse Tracker</h1>
+    
+    <div class="main">
+
+    <label for="Category">Category</label>
+    <select name="Category" id="cat-items" required >
+        <option value="Food & Beverages">Food & Beverages</option>
+        <option value="Rent">Rent</option>
+        <option value="Travelling">Travelling</option>
+        <option value="Relexing">Relexing</option>
+    </select>
+
+    <input type="number" min="0" placeholder="Enter amount" id="amt-item" required/>
+
+    <label for="date" >Date</label>
+    <input type="date" placeholder="select date" id="date-item"required/>
+    <button class="btn" id="btn" onclick="fndexp()">Add</button>
+
+</div>
+<div class="line" id="line"></div>
+<table class="table-main" id="table-main">
+    <thead>
+    <tr id="table-head">
+      
+      <th>Category</th>
+      <th>Amount</th>
+      <th>Date</th>
+      <th>Delete</th>
+</tr>
+</thead>
+<tbody id="expanses-table">
+</tbody>
+<tfoot>
+    <tr>
+        <td >Total</td>
+        <td class="total" id="total"></td>
+        <td></td>
+        <td></td>
+    </tr>
+</tfoot>
+</div>
+
+</table>
+<script src="exp.js"></script>
+</body>
+</html>
